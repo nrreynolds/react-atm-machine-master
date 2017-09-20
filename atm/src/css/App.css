@@ -1,0 +1,194 @@
+body,html{
+  background-color: #777;
+}
+.App{
+  -ms-align-items: center;
+  align-items: center;
+  background-color: #555;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 800px;
+  width: 80%;
+}
+
+
+.Screen{
+  background-color: cornflowerblue;
+  color: white;
+  height: 50vh;
+  width: 85%;
+  padding: 1em;
+}
+
+.action{
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Screen div{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.Screen h1, .Screen h2, .Screen h3{
+  margin: .5em 0;
+}
+
+.Buttons{
+  background-color: #444;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 26vh;
+  min-width: 300px;
+  padding: 3vh;
+  width: 50%;
+}
+
+.button-row{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 25%;
+  width: 100%;
+}
+
+.button-row button{
+  -ms-align-items: center;
+  align-items: center;
+  background-color: #bbb;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+
+.button-row button:nth-of-type(4){
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.buttonVal{
+  font-size: 2em;
+}
+
+.Errors{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 800px;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  width: 80%;
+}
+
+.Errors li{
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  background-color: indianred;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.Errors li button{
+  background-color: transparent;
+  color:white;
+  border: 0 solid transparent;
+  outline: 0 solid transparent;
+  font-size: 2em;
+  margin-top: -.5em;
+  padding: 0;
+}
+
+.Errors li p{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+}
+
+.errorTitle{
+  color: white;
+}
+.errorMsg{
+  color: rgba(255,255,255,.6);
+  font-size: .8em;
+}
+.ballance{
+  display: block;
+  font-size: .7em;
+}
+
+.action .ballance{
+  text-decoration: none;
+}
+
+.ballance::before{
+  content: 'Ballance: ';
+}
+
+input{
+  background-color: rgba(255,255,255,.3);
+  color: white;
+  border: 1px solid #444;
+  font-size: 1.5em;
+  padding: 1em;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .buttonText{
+    width: 0px;
+    overflow: hidden;
+  }
+  .Buttons{
+    width: 85%;
+    min-width: 220px;
+  }
+}
